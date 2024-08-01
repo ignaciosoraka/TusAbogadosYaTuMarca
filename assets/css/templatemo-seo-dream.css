@@ -334,6 +334,32 @@ header
   width: auto; /* Mantén la proporción de aspecto */
   display: block; /* Asegura que se comporte como un bloque para centrarlo fácilmente */
 }
+.disabled-link {
+  color: transparent; /* Hace el texto invisible */
+  pointer-events: none; /* Desactiva la capacidad de clic */
+  cursor: default; /* Cambia el cursor a default para indicar que no es clickeable */
+  text-decoration: none; /* Remueve subrayado u otros decorados de texto */
+  background: transparent; /* Asegura que no haya color de fondo */
+  border: none; /* Remueve cualquier borde si existe */
+  outline: none; /* Remueve el contorno de enfoque */
+  height: 0; /* Oculta la altura visual */
+  width: 0; /* Oculta la anchura visual */
+  overflow: hidden; /* Asegura que ningún contenido visible se muestre */
+  display: inline-block; /* Permite mantener el espacio ocupado */
+  visibility: hidden; /* Hace que el elemento no sea visible */
+  padding: 0; /* Remueve el espacio alrededor del texto */
+  margin: 0; /* Remueve el margen para asegurarse de que no haya espacio extra */
+}
+@media (max-width:786px)
+{
+  .logo img {
+    margin-left: -50px;
+    margin-top: 0px;
+    height: 100px; /* Ajusta la altura del logo */
+    width: auto; /* Mantén la proporción de aspecto */
+    display: block; /* Asegura que se comporte como un bloque para centrarlo fácilmente */
+  }
+}
 
 .subheading {
   font-size: 25px; /* Ajusta el tamaño del texto más pequeño */
@@ -460,7 +486,7 @@ header
 
 .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover {
-  color: #4771cb !important;
+  color: #dc8426 !important;
 }
 
 .header-area .main-nav .nav li a {
@@ -548,7 +574,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #33ccc5!important;
+  color: #000000!important;
   padding-left: 25px;
 }
 
@@ -714,7 +740,7 @@ header
 
 @media (max-width: 767px) {
   .background-header .main-nav .nav {
-    margin-top: 80px !important;
+    margin-top: 100px !important;
   }
   .header-area .main-nav .logo {
     color: #1e1e1e;
@@ -729,7 +755,7 @@ header
   }
   .header-area {
     background-color: #D07703;
-    padding: 0px 15px;
+    padding: 0px 10px;
     height: 100px;
     box-shadow: none;
     text-align: center;
@@ -745,6 +771,8 @@ header
   }
   .header-area .main-nav {
     overflow: hidden;
+   
+    
   }
   .header-area .main-nav .nav {
     float: none;
@@ -773,7 +801,9 @@ header
     padding-right: 0px !important;
   }
   .header-area .main-nav .nav li a {
+
     height: 50px !important;
+    text-align: center!important;
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
@@ -782,7 +812,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #33ccc5!important;
+    color: #0a0a0a!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -896,7 +926,7 @@ preloader
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #33ccc5;
+    background: #000000;
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -919,7 +949,7 @@ preloader
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #33ccc5;
+    background: #000000;
     border-radius: 50%;
 }
 
@@ -1605,6 +1635,10 @@ responsive
 @media (max-width: 992px) {
   .header-area .main-nav .logo h4 {
     font-size: 20px;
+  }
+
+  .main-banner{
+    padding: 100px 0px 120px 0px;
   }
   .main-banner .left-content {
     margin-right: 0px;
