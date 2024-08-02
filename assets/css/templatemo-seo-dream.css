@@ -27,7 +27,7 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 /* 
 ---------------------------------------------
 reset
@@ -102,7 +102,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif!important;
   font-weight: 400;
   background-color: #fff;
   -ms-text-size-adjust: 100%;
@@ -276,7 +276,7 @@ body {
   font-weight: 400;
   color: #fff;
   text-transform: capitalize;
-  padding: 12px 20px;
+  padding: 15px 26px;
   border-radius: 23px;
   letter-spacing: 0.25px;
   border: none;
@@ -305,11 +305,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Añadir sombra */
 }
 
-.whatsapp-icon {
-  margin-right: 8px; /* Espacio entre el icono y el texto */
-  vertical-align: middle; /* Alinea verticalmente con el texto */
-  font-size: 18px; /* Tamaño del icono */
-}
+
 
 /* 
 ---------------------------------------------
@@ -362,7 +358,8 @@ header
 }
 
 .subheading {
-  font-size: 25px; /* Ajusta el tamaño del texto más pequeño */
+  font-size: 20px; /* Ajusta el tamaño del texto más pequeño */
+  margin-left: 20px;
   font-weight: 400; /* Ajusta el grosor del texto más pequeño */
  
 }
@@ -1062,6 +1059,11 @@ Features Style
   -webkit-transition: background-color .5s;
   -o-transition: background-color .5s;
   -moz-transition: background-color .5s;
+
+  height: 600px; /* Altura fija para todos los items */
+  display: flex;
+  flex-direction: column; /* Flex en columna para el contenido */
+  justify-content: space-between; /* Espacio uniforme entre elementos internos */
 }
 
 .features-item:hover {
@@ -1166,8 +1168,8 @@ Features Style
 .features-item h4 {
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: 30px;
-  font-size: 20px;
+  margin-top: 15px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #2a2a2a;
@@ -1655,6 +1657,7 @@ responsive
   }
   .features-item {
     margin-bottom: 45px;
+    height: 500px;
   }
   .last-features-item,
   .last-skill-item {
